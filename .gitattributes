@@ -1,0 +1,7 @@
+* text=auto
+
+README.md text ident diff=markdown linguist-documentation
+*.md      text diff=markdown linguist-documentation
+LICENSE   text linguist-documentation
+
+*.S   text linguist-language=m68k

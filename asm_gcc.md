@@ -1,3 +1,6 @@
+---
+source: http://elm-chan.org/docs/avrlib/asm_gcc.html
+---
 # How to write an assembler function (avr-gcc)
 
 Normally, I don't think I have a chance to write assembler functions, but I think it's common to read the code spit out by the compiler, so it's worth knowing. On the contrary, if you can't do that, you're out of luck if you run into deep-rooted bugs. Here, I will briefly explain how to write an assembler function in avr-gcc. The benefits of assembler are reduced memory consumption and increased speed. It's more specific and easier to understand than an inline assembler embedded directly in C source, so I think it's suitable for beginners from AVRASM. If the function is solid and frequently used, it is a good idea to assemble it.

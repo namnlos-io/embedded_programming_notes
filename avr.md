@@ -1,3 +1,6 @@
+---
+source: http://elm-chan.org/docs/dev/avr.html
+---
 # About Atmel AVR
 
 AVR stands for [Atmel](http://www.atmel.com/)'s 8-bit RISC architecture. In addition to a general-purpose microcontroller, it is also the core processor of the company's FPGA. Since the first announcement of the AVR series was around 1996, it can be said that it is a much later microcomputer than the industry standard 8051 and the popular PIC.
