@@ -73,7 +73,7 @@ The instructions listed in this section are limited to a 64K data segment and so
 
 The LDS instruction loads a single byte of data from the data space to a register and depending on whether it uses an 8 or 16 bit address the Opcode size is either 16-bit or 32-bit respectively. Similar instructions are available to transfer a single byte of data from a register to data space using the STS instruction.
 
-![Image 2](https://www.codeproject.com/KB/system/712610/AVRMemMap.png)
+![Image 2](images/addr1.png)
 
 ```m68k
 ;Instructions that use this format are;
@@ -322,7 +322,7 @@ int main()
 
 Resulting disassembled code
 
-```
+```m68k
 ;           iRetVal = AsmSubroutine(1024, 16);
 318:    80 e0           ldi    r24, 0x00    ; 0
 31a:    94 e0           ldi    r25, 0x04    ; 4
@@ -394,7 +394,6 @@ As can be seen from the two examples the parameters passed in use a register pai
 ### Calling C subroutine from Assembler
 
 When calling a 'C' subroutine from assembler the same rules and registers apply, load the proper parameters into R25-R18 and expect the results in the corresponding registers. To illustrate this concept we will add two 16 bit numbers as we did in the first example above but after calling the Assembler subroutine from C we will just make a call to a C routine that will add the two numbers and return the result and as you will see the same results will be obtained.
-
 
 ```c
 int AsmSubroutine(int, int);
